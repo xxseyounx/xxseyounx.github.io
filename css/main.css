@@ -110,13 +110,12 @@ header {
 }
 #main-visual .main-title {
   position: absolute;
-  width: 50%;
-  left: 10%;
-  top: 40%;
+  left: 8%;
+  bottom: 20%;
 }
 #main-visual .main-title p {
-  font-size: 12rem;
-  line-height: 14rem;
+  font-size: clamp(1.6rem, 5vw, 13rem);
+  line-height: 120%;
 }
 
 /* moto */
@@ -672,6 +671,14 @@ footer {
   header {
     padding: 10px 0px;
   }
+  #main-visual .main-title {
+    position: absolute;
+    left: 8%;
+    bottom: 20%;
+  }
+  #main-visual .main-title p {
+    font-size: clamp(1.6rem, 5vw, 13rem);
+  }
   .section-title {
     font-size: 3.6rem;
     font-weight: 700;
@@ -684,7 +691,7 @@ footer {
     text-align: center;
   }
   #about {
-    margin-top: calc((100vw * 9 / 16) + 80px);
+    margin-top: 40px;
   }
   .ab-img-wrap {
     width: 40%;
@@ -817,7 +824,7 @@ footer {
     text-align: center;
   }
   #about {
-    margin-top: calc((100vw * 9 / 16) + 60px);
+    margin-top: 40px;
     text-align: center;
   }
   .about-inner {
