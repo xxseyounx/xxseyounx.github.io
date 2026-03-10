@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('.gnb a').forEach((link, index) => {
     link.addEventListener('click', (e) => {
       e.preventDefault();
-      const sections = ['#profile', '#skill', '#work', '#contact'];
+      const sections = ['#about', '#skill', '#work', '#contact'];
       const targetElement = document.querySelector(sections[index]);
       if (targetElement) {
         const targetTop = targetElement.getBoundingClientRect().top + window.pageYOffset;

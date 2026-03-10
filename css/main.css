@@ -94,7 +94,7 @@ header {
 .section-sub-title {
   font-family: 'Prata', serif;
   font-size: 3rem;
-  margin: 80px 0 100px 0;
+  margin-top: 80px;
   text-align: center;
 }
 
@@ -102,16 +102,23 @@ header {
 #main-visual {
   position: relative;
   width: 100%;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 16/9;
+  background-image: url(/image/main_banner.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left 0 top 80px;
 }
-#main-visual > video {
+#main-visual .main-title {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  width: 50%;
+  left: 10%;
+  top: 40%;
 }
+#main-visual .main-title p {
+  font-size: 12rem;
+  line-height: 14rem;
+}
+
 /* moto */
 #moto {
   padding: 30px 0;
@@ -123,8 +130,8 @@ header {
   text-align: center;
 }
 
-/* profile */
-#profile {
+/* about */
+#about {
   margin-top: 80px;
 }
 .about-inner {
@@ -152,6 +159,12 @@ header {
 }
 .ab-text-wrap div {
   margin-bottom: 50px;
+}
+.my-name {
+  margin-bottom: 20px;
+}
+.ab-sm-title {
+  color: #78a596;
 }
 .ab-text-wrap div:last-child {
   margin-bottom: 0;
@@ -190,6 +203,9 @@ header {
 }
 
 /* work */
+#work {
+  margin-top: 200px;
+}
 .card-thumbnail > img {
   width: 100%;
 }
@@ -232,7 +248,7 @@ header {
 
 /* 카드형 슬라이더 */
 :root {
-  --card-width: 500px;
+  --card-width: 400px;
   --blur-value: 4px; /* 블러 강도 조절 */
 }
 
