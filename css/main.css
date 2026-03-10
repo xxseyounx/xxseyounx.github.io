@@ -60,7 +60,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #333;
+  background-color: #000;
   border-bottom: 1px solid #ccc;
 }
 .header-inner {
@@ -82,7 +82,7 @@ header {
 .gnb > a {
   margin-left: 40px;
   /* 네비게이션 메뉴 글씨 굵기 */
-  font-weight: 100;
+  font-weight: 200;
 }
 .section-title {
   font-family: 'Prata', serif;
@@ -177,13 +177,16 @@ header {
 #skill h4 {
   color: #78a596;
   font-weight: 700;
-  margin-bottom: 32px;
 }
 #skill h4 > strong {
   color: #fff;
   display: block;
   font-size: 2.6rem;
   font-weight: 800;
+  margin-bottom: 10px;
+}
+#skill ul ul {
+  margin-top: 10px;
 }
 
 /* work */
