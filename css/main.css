@@ -109,9 +109,11 @@ header {
   background-position: left 0 top 80px;
 }
 #main-visual .main-title {
+  font-family: 'Inria Serif', serif;
+  font-weight: lighter;
   position: absolute;
   left: 8%;
-  bottom: 20%;
+  bottom: 30%;
 }
 #main-visual .main-title p {
   font-size: clamp(1.6rem, 5vw, 13rem);
