@@ -84,6 +84,26 @@ header {
   /* 네비게이션 메뉴 글씨 굵기 */
   font-weight: 200;
 }
+body {
+  margin: 0;
+}
+
+.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 50%;
+  min-height: auto;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+}
+
 .section-title {
   font-family: 'Prata', serif;
   font-size: 4rem;
