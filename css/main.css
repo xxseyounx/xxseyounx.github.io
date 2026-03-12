@@ -7,23 +7,13 @@
 /* font-family: "Prata", serif; */
 /* 컬러 */
 /* color: #78a596; */
-
 @font-face {
-  font-family: 'AmstelvarAlpha Default';
+  font-family: 'AmstelvarAlpha';
   font-style: normal;
   font-weight: normal;
   src:
-    local('AmstelvarAlpha Default'),
-    url('AmstelvarAlpha-Variations-noHVAR.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'AmstelvarAlpha Default';
-  font-style: normal;
-  font-weight: normal;
-  src:
-    local('AmstelvarAlpha Default'),
-    url('AmstelvarAlpha-Variations.woff') format('woff');
+    local('AmstelvarAlpha'),
+    url('/font/AmstelvarAlpha-Variations.woff') format('woff');
 }
 
 /* 초기화 */
@@ -43,7 +33,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: 'AmstelvarAlpha Default', sans-serif;
+  font-family: 'AmstelvarAlpha', sans-serif;
   font-size: 1.6rem;
   line-height: 1.6;
   background-color: #111111;
@@ -77,6 +67,8 @@ a:active {
 
 /* header */
 header {
+  /* 헤더 네비게이션 폰트 설정 */
+  font-family: 'Pretendard Variable', sans-serif;
   position: fixed;
   z-index: 9999;
   top: 0;
@@ -84,6 +76,7 @@ header {
   width: 100%;
   background-color: #000;
   border-bottom: 1px solid #ccc;
+  /* display: none; */
 }
 .header-inner {
   display: flex;
@@ -94,7 +87,7 @@ header {
 .logo {
   align-self: center;
   /* 로고 너비 지정 */
-  width: 65px;
+  width: 100px;
 }
 
 .logo > a > img {
@@ -162,10 +155,6 @@ body {
   line-height: 120%;
 }
 
-/* moto */
-#moto {
-  padding: 30px 0;
-}
 #moto p {
   font-family: 'AmstelvarAlpha Default';
   font-size: 2rem;
@@ -177,6 +166,7 @@ body {
 /* about */
 #about {
   margin-top: 80px;
+  height: 100vh;
 }
 .about-inner {
   display: flex;
@@ -224,7 +214,10 @@ body {
 
 /* skill */
 #skill {
-  margin: 160px auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 #skill > ul {
   display: flex;
@@ -244,6 +237,7 @@ body {
 }
 #skill ul ul {
   margin-top: 10px;
+  padding-bottom: 200px;
 }
 
 /* work */
@@ -259,10 +253,10 @@ body {
   padding: 20px;
 }
 .card-detail > h5 {
-  font-size: 3rem;
+  font-size: 2.6rem;
 }
 .card-detail > ul {
-  margin: 20px 0;
+  margin: 20px;
 }
 .card-detail > ul > li {
   line-height: 2.6rem;
@@ -301,7 +295,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 700px;
+  height: 650px;
   overflow: hidden;
   margin-bottom: 150px;
 }
