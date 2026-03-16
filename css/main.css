@@ -123,7 +123,7 @@ body {
   font-family: 'AmstelvarAlpha Default', serif;
   font-size: 4rem;
   font-weight: 800;
-  margin-bottom: 80px;
+  margin: 0 0 48px;
   text-align: center;
 }
 .section-sub-title {
@@ -165,8 +165,8 @@ body {
 
 /* about */
 #about {
-  margin-top: 80px;
-  height: 100vh;
+  padding: 150px 0;
+  min-height: 100vh;
 }
 .about-inner {
   display: flex;
@@ -192,10 +192,10 @@ body {
   padding-left: 6rem;
 }
 .ab-text-wrap div {
-  margin-bottom: 50px;
+  margin-bottom: 36px;
 }
 .my-name {
-  margin-bottom: 20px;
+  margin-bottom: 12px;
 }
 .ab-sm-title {
   color: #78a596;
@@ -213,31 +213,43 @@ body {
 }
 
 /* skill */
-#skill {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+
+.container {
+  margin-top: 300px;
+  margin-bottom: 300px;
 }
-#skill > ul {
-  display: flex;
-  justify-content: space-around;
+
+li {
+  list-style: none;
+  margin-top: 8px;
+}
+#skill {
   text-align: center;
 }
-#skill h4 {
-  color: #78a596;
-  font-weight: 700;
+
+.skill-grid {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
 }
-#skill h4 > strong {
-  color: #fff;
-  display: block;
-  font-size: 2.6rem;
-  font-weight: 800;
-  margin-bottom: 10px;
+
+.skill-name {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  font-size: 2rem;
+  white-space: nowrap;
 }
-#skill ul ul {
-  margin-top: 10px;
-  padding-bottom: 200px;
+
+.skill-card {
+  border: 1px solid #ddd;
+  padding: 30px 10px;
+  width: 250px;
+  height: 350px;
+  border-radius: 10px;
+}
+
+.skill-card h3 {
+  font-size: 5rem;
 }
 
 /* work */
@@ -252,11 +264,13 @@ body {
   flex-direction: column;
   padding: 20px;
 }
-.card-detail > h5 {
-  font-size: 2.6rem;
+.card-detail > h6 {
+  font-size: 2.3rem;
+  text-align: center;
 }
 .card-detail > ul {
-  margin: 20px;
+  margin-top: 8px;
+  margin-bottom: 15px;
 }
 .card-detail > ul > li {
   line-height: 2.6rem;
@@ -265,18 +279,19 @@ body {
   display: flex;
 }
 .card-detail .long-btns > a {
-  color: #212121;
-  font-size: 1.8rem;
+  color: #fff
+  font-size: 1.3rem;
   font-weight: bold;
   display: block;
   line-height: 38px;
   border: 1px solid #516768;
+  background-color: #111111;
   padding: 0px 25px;
   border-radius: 32px;
   font-style: italic;
 }
 .card-detail .long-btns > a:first-child {
-  margin-right: 20px;
+  margin-left: 210px;
 }
 .card-detail .long-btns > a:hover,
 .card-detail .long-btns > a:focus {
