@@ -679,7 +679,7 @@ button {
 .section-sub-title{
   text-align: center;
   font-size: 2.4rem;
-  margin-bottom: 60px;
+  margin-bottom: 80px;
 }
 
 /* 카드 전체 정렬 */
@@ -735,7 +735,7 @@ button {
 /* footer */
 footer {
   text-align: center;
-  padding: 40px;
+  padding: 20px;
   background-color: #000;
 }
 
