@@ -38,10 +38,10 @@ body {
   line-height: 1.6;
   background-color: #111111;
   color: #fff;
-  background-image: url(../image/배경.png);
+  background-image: url(../image/배경.png)
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: right top 1700px;
+  background-size: contain
+  background-position: right top 1700px
 }
 /*img, iframe{vertical-align: top;}*/
 img,
@@ -165,7 +165,7 @@ body {
 
 /* about */
 #about {
-  padding: 150px 0;
+  margin-top: 300px;
   min-height: 100vh;
 }
 .about-inner {
@@ -279,7 +279,7 @@ li {
   display: flex;
 }
 .card-detail .long-btns > a {
-  color: #fff
+  color: #ffffff
   font-size: 1.3rem;
   font-weight: bold;
   display: block;
@@ -541,6 +541,7 @@ button {
 /* shorts-pc */
 .short {
   margin-top: 80px;
+  margin-bottom: 150px;
   width: 100%;
   position: relative;
   /* 버튼이 리스트 영역 밖으로 배치될 공간 확보 */
@@ -672,6 +673,47 @@ button {
 
 .short-list a:hover .short-title {
   pointer-events: auto;
+}
+
+/* 섹션 제목 */
+.section-sub-title{
+  text-align: center;
+  font-size: 2.4rem;
+  margin-bottom: 60px;
+}
+
+/* 카드 전체 정렬 */
+.banner-grid{
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  margin-top: 10px;
+  margin-bottom: 300px;
+}
+
+/* 카드 */
+.banner-card{
+  width: 500px;
+}
+
+/* 이미지 */
+.banner-card img{
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* 제목 */
+.banner-card h6{
+  margin-top: 20px;
+  font-size: 2rem;
+}
+
+/* 설명 */
+.banner-card p{
+  margin-top: 10px;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  color: #ccc;
 }
 
 /* contact-pc */
