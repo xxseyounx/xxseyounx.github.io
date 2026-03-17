@@ -289,6 +289,11 @@ li {
 }
 .card-detail .long-btns {
   display: flex;
+  justify-content: end;
+  /* background-color: #69f; */
+}
+.btn-view {
+  align-self: center;
 }
 .card-detail .long-btns > a {
   color: #ffffff;
@@ -842,6 +847,10 @@ footer {
   .ab-text-wrap h5 {
     font-size: 1.6rem;
   }
+  .ab-text-wrap .my-name {
+    font-size: 2.6rem;
+  }
+
   #skill {
     margin: 100px 0px;
   }
@@ -969,6 +978,10 @@ footer {
     gap: 80px;
     margin-top: 80px;
     margin-bottom: 100px;
+  }
+  /* 카드 */
+  .banner-card {
+    width: 340px;
   }
 
   /* contact-mobile */
