@@ -38,10 +38,10 @@ body {
   line-height: 1.6;
   background-color: #111111;
   color: #fff;
-  background-image: url(../image/배경.png)
+  background-image: url(../image/배경.png);
   background-repeat: no-repeat;
-  background-size: contain
-  background-position: right top 1700px
+  background-size: contain;
+  background-position: right top 1700px;
 }
 /*img, iframe{vertical-align: top;}*/
 img,
@@ -76,6 +76,7 @@ header {
   width: 100%;
   background-color: #000;
   border-bottom: 1px solid #ccc;
+  height: 50px;
   /* display: none; */
 }
 .header-inner {
@@ -105,31 +106,35 @@ body {
 
 .hero {
   position: relative;
-  height: 100vh;
+  /* height: 100vh; */
+  aspect-ratio: 16/9;
   overflow: hidden;
+  margin-top: 50px;
 }
 
 .hero-video {
-  position: absolute;
+  /* position: absolute;
   top: 50%;
   left: 50%;
   min-width: 50%;
   min-height: auto;
   transform: translate(-50%, -50%);
-  object-fit: cover;
+  object-fit: cover; */
+  width: 100%;
 }
 
 .section-title {
   font-family: 'AmstelvarAlpha Default', serif;
   font-size: 4rem;
   font-weight: 800;
-  margin: 0 0 48px;
+  margin-bottom: 48px;
   text-align: center;
 }
 .section-sub-title {
   font-family: 'AmstelvarAlpha Default', serif;
-  font-size: 3rem;
-  margin-top: 80px;
+  font-size: 2.4rem;
+  /* margin-top: 80px; */
+  margin-bottom: 48px;
   text-align: center;
 }
 
@@ -230,7 +235,8 @@ li {
 .skill-grid {
   display: flex;
   justify-content: center;
-  gap: 40px;
+  gap: 20px;
+  /* background-color: #69f; */
 }
 
 .skill-name {
@@ -241,10 +247,11 @@ li {
 }
 
 .skill-card {
-  border: 1px solid #ddd;
-  padding: 30px 10px;
-  width: 250px;
-  height: 350px;
+  flex: 1;
+  /* border: 1px solid #ddd; */
+  /* padding: 30px 10px; */
+  /* width: 250px; */
+  /* height: 350px; */
   border-radius: 10px;
 }
 
@@ -274,12 +281,17 @@ li {
 }
 .card-detail > ul > li {
   line-height: 2.6rem;
+  margin: 0 auto;
+  /* 단어 단위로 줄바꿈 */
+  /* word-break: keep-all; */
+  /* 문단 양끝 정렬 */
+  /* text-align: justify; */
 }
 .card-detail .long-btns {
   display: flex;
 }
 .card-detail .long-btns > a {
-  color: #ffffff
+  color: #ffffff;
   font-size: 1.3rem;
   font-weight: bold;
   display: block;
@@ -410,132 +422,6 @@ li {
 button {
   padding: 10px 20px;
   cursor: pointer;
-}
-
-/* img-slider */
-.img-slider-wrap {
-  width: 60%;
-  display: flex;
-  gap: 30px;
-  margin: 0 auto;
-  margin-bottom: 150px;
-}
-.img-slider {
-  width: 400px;
-  margin: 0 auto;
-  overflow: hidden;
-  position: relative;
-  background: #fff;
-  border: 1px solid #dbdbdb;
-  border-radius: 8px;
-}
-
-.img-slider-track {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-}
-.img-description {
-  width: 400px;
-  text-align: left;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.img-description > h6 {
-  font-size: 2.2rem;
-  margin-bottom: 10px;
-}
-.img-description > ul > li {
-  margin: 15px 0;
-}
-.img-description > ul > li > p {
-  font-size: 1.75rem;
-}
-
-/* page */
-.page {
-  min-width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-.page img {
-  width: 100%;
-  display: block;
-}
-
-.caption {
-  padding: 15px;
-  font-size: 1.4rem;
-  font-weight: 500;
-}
-
-/* 좌우 네비게이션 버튼 공통 스타일 */
-.slider-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(255, 255, 255, 0.7);
-  border: none;
-  border-radius: 50%;
-
-  /* 크기 고정 */
-  width: 30px !important;
-  height: 30px !important;
-  min-width: 30px;
-
-  cursor: pointer;
-  z-index: 10;
-
-  display: flex;
-  align-items: center; /* 수직 중앙 */
-  justify-content: center; /* 수평 중앙 */
-
-  padding: 0;
-  margin: 0;
-  color: #333;
-  flex-shrink: 0; /* 버튼이 찌그러지는 것 방지 */
-}
-.slider-btn > img {
-  width: 40%;
-}
-/* 각 버튼의 가로 위치 */
-.prev-btn {
-  left: 10px;
-}
-
-.next-btn {
-  right: 10px;
-}
-
-/* 버튼이 숨겨질 때 사용할 클래스 */
-.hidden {
-  opacity: 0;
-  pointer-events: none; /* 클릭 안되게 설정 */
-}
-
-.img-indicator {
-  position: absolute;
-  bottom: 15px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  justify-content: center;
-  gap: 5px;
-  padding: 0;
-  z-index: 10;
-}
-
-.img-indicator .dot {
-  width: 6px;
-  height: 6px;
-  background: rgba(255, 255, 255, 0.5);
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-.img-indicator .dot.active {
-  background: #fff;
 }
 
 /* shorts-pc */
@@ -675,41 +561,34 @@ button {
   pointer-events: auto;
 }
 
-/* 섹션 제목 */
-.section-sub-title{
-  text-align: center;
-  font-size: 2.4rem;
-  margin-bottom: 80px;
-}
-
 /* 카드 전체 정렬 */
-.banner-grid{
+.banner-grid {
   display: flex;
   justify-content: center;
   gap: 80px;
-  margin-top: 10px;
+  margin-top: 80px;
   margin-bottom: 300px;
 }
 
 /* 카드 */
-.banner-card{
+.banner-card {
   width: 500px;
 }
 
 /* 이미지 */
-.banner-card img{
+.banner-card img {
   width: 100%;
   border-radius: 10px;
 }
 
 /* 제목 */
-.banner-card h6{
+.banner-card h6 {
   margin-top: 20px;
   font-size: 2rem;
 }
 
 /* 설명 */
-.banner-card p{
+.banner-card p {
   margin-top: 10px;
   font-size: 1.5rem;
   line-height: 1.6;
@@ -810,6 +689,29 @@ footer {
   #skill h4 > strong {
     font-size: 2.2rem;
   }
+
+  .skill-grid {
+    gap: 10px;
+  }
+
+  .skill-name {
+    font-size: 1.6rem;
+    white-space: nowrap;
+  }
+
+  .skill-card {
+    flex: 1;
+    /* border: 1px solid #ddd; */
+    /* padding: 30px 10px; */
+    /* width: 250px; */
+    /* height: 350px; */
+    border-radius: 10px;
+  }
+
+  .skill-card h3 {
+    font-size: 3.5rem;
+  }
+
   :root {
     --card-width: 420px;
   }
@@ -826,16 +728,7 @@ footer {
   .card-detail > ul {
     margin: 20px 0px;
   }
-  /* img-slider */
-  .img-slider-wrap {
-    width: 680px;
-  }
-  .img-description > ul > li {
-    margin: 10px 0;
-  }
-  .img-description > ul > li > p {
-    font-size: 1.65rem;
-  }
+
   /* shorts-tablet */
   /* 1. 기본 레이아웃 조정 */
   .short {
@@ -998,35 +891,29 @@ footer {
     transform: translateX(200px) scale(0.8);
   }
 
-  /* img slider-mobile */
-  .img-slider-wrap {
-    width: 300px;
+  .skill-grid {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 80px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    /* background-color: #69f; */
   }
-  .img-slider {
-    width: 100%;
-    margin: 0 auto;
-    overflow: hidden;
-    position: relative;
-    background: #fff;
-    border: 1px solid #dbdbdb;
-    border-radius: 8px;
-  }
-  .slider-btn {
-    display: none;
-  }
-  .img-description {
-    width: 300px;
-    text-align: left;
-  }
-  .img-description ul li {
-    margin: 10px 0;
-  }
-  .img-description ul li p {
+  .skill-name {
     font-size: 1.6rem;
+    white-space: nowrap;
+  }
+
+  .skill-card {
+    flex: 1;
+    /* border: 1px solid #ddd; */
+    /* padding: 30px 10px; */
+    /* width: 250px; */
+    /* height: 350px; */
+    border-radius: 10px;
+  }
+
+  .skill-card h3 {
+    font-size: 3.5rem;
   }
 
   /* shorts-mobile */
@@ -1072,6 +959,16 @@ footer {
 
   .short > ul.short-list > li > a > div.short-title > img {
     display: none;
+  }
+
+  .banner-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin-top: 80px;
+    margin-bottom: 100px;
   }
 
   /* contact-mobile */
