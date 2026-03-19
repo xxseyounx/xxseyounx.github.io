@@ -80,6 +80,9 @@ header {
   border-bottom: 1px solid #ccc;
   height: 50px;
   /* display: none; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .header-inner {
   display: flex;
@@ -796,7 +799,7 @@ footer {
   }
   .center {
     width: initial;
-    padding: 8px 18px;
+    padding: 8px 15px 8px 10px;
   }
   .gnb > a {
     font-size: 1.4rem;
