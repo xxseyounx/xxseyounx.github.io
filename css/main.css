@@ -309,9 +309,6 @@ li {
   padding: 0px 15px;
   border-radius: 32px;
 }
-.card-detail .long-btns > a:first-child {
-  margin-left: 210px;
-}
 .card-detail .long-btns > a:hover,
 .card-detail .long-btns > a:focus {
   background-color: #fff;
@@ -730,7 +727,7 @@ footer {
     width: 100%;
   }
   .card-detail {
-    padding: 20px 0px;
+    padding: 20px;
   }
   .card-detail > ul {
     margin: 20px 0px;
@@ -791,7 +788,7 @@ footer {
 /* mobile */
 @media screen and (max-width: 767px) {
   :root {
-    --card-width: 310px;
+    --card-width: 290px;
   }
 
   body {
@@ -880,6 +877,7 @@ footer {
 
   #work {
     margin-top: 100px;
+    padding: 0;
   }
 
   /* slider-mobile */
@@ -891,7 +889,7 @@ footer {
     width: 100%;
   }
   .card-detail {
-    padding: 20px;
+    padding: 15px;
   }
   .card-detail > h5 {
     font-size: 2.6rem;
