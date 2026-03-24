@@ -43,7 +43,7 @@ body {
   background-image: url(../image/background.png);
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: right top 1700px;
+  background-position: right top 1900px;
 }
 /*img, iframe{vertical-align: top;}*/
 img,
@@ -647,7 +647,7 @@ footer {
     font-size: 1.4rem;
   }
   .center {
-    width: initial;
+    width: 100%;
     padding: 0px 32px;
   }
   header {
@@ -798,9 +798,14 @@ footer {
     font-size: 1.4rem;
   }
   .center {
-    width: initial;
+    width: 100%;
     padding: 8px 15px 8px 10px;
   }
+  /* 모바일 로고 크기 */
+  .logo {
+    width: 80px;
+  }
+
   .gnb > a {
     font-size: 1.4rem;
     margin-left: 10px;
