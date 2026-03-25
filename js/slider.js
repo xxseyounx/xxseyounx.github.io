@@ -1,7 +1,24 @@
 window.onload = function () {
   const cards = document.querySelectorAll('.card');
-  const dots = document.querySelectorAll('.controls .dot');
   const track = document.querySelector('.slider-track');
+
+  // 인디케이터가 들어갈 부모 컨테이너 찾기
+  const indicatorContainer = document.querySelector('.indicator-container');
+
+  // 카드의 개수만큼 반복해서 dot을 만들고 컨테이너에 넣기
+  cards.forEach((card, index) => {
+    const dot = document.createElement('div');
+    dot.classList.add('dot');
+    dot.setAttribute('data-index', index);
+    // 처음에 첫 번째 카드(index 0)가 활성화되도록 설정
+    if (index === 0) {
+      dot.classList.add('active');
+    }
+    indicatorContainer.appendChild(dot);
+  });
+
+  // 동적으로 생성한 dot들을 선택
+  const dots = document.querySelectorAll('.controls .dot');
 
   let currentIndex = 0;
   let autoSlideInterval;

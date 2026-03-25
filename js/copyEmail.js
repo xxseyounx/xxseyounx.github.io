@@ -1,4 +1,4 @@
 function copyEmail() {
-  navigator.clipboard.writeText('editor_sgy@gmail.com');
-  alert('이메일 주소가 복사되었습니다!');
+  navigator.clipboard.writeText('se011023@naver.com');
+  alert('이메일 주소가 클립보드에 복사되었습니다!');
 }
